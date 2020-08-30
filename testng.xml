@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+<listeners>
+		<listener class-name="com.promise_qa.utils.CustomListener" />
+	</listeners>
+	<test name="Test">
+		<parameter name="browser" value="chrome" />
+		<classes>
+			<class name="com.promise_qa.test.LoginPageTest" /> 
+			<class name="com.promise_qa.test.LandingPageTest" />
+			<class name="com.promise_qa.test.PromiseToPageTest" />
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->
